@@ -6,8 +6,8 @@
 
 @layer base {
   :root {
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Lato', sans-serif;
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
     --background: 35 38% 93%;
     --foreground: 0 15% 36%;
