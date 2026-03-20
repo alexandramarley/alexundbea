@@ -17,6 +17,22 @@ const AgendaSection = () => {
               Der Tag im Überblick
             </p>
             <h2 className="font-display text-4xl md:text-5xl text-wine mb-12">
+              19. September 2026
+            </h2>
+            <div className="space-y-6">
+              {timeline.map((item) => (
+                <div key={item.time} className="flex items-baseline gap-6 group">
+                  <span className="font-display text-2xl text-primary min-w-[5rem] text-right">
+                    {item.time}
+                  </span>
+                  <div className="h-px w-6 bg-border group-hover:bg-primary transition-colors mt-1 flex-shrink-0" />
+                  <span className="font-body text-lg text-foreground">
+                    {item.event}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
               Ablauf
             </h2>
             <div className="space-y-6">

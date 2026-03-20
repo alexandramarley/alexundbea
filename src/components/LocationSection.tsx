@@ -22,13 +22,14 @@ const LocationSection = () => {
               Location
             </h2>
             <p className="font-body text-lg text-foreground leading-relaxed mb-4">
-              Wir feiern unsere Liebe an einem wunderschönen Ort, der uns beiden am Herzen liegt. Umgeben von Natur und warmem Licht freuen wir uns darauf, diesen besonderen Tag mit euch zu teilen.
+              Wir feiern unsere Liebe an einem Ort, der uns besonders am Herzen liegt.
+              Mitten im Degermoos, umgeben von Natur, Feldern und der Ruhe des Waldes, verbringen wir hier unseren Alltag – und genau hier möchten wir auch diesen besonderen Tag mit euch teilen.
             </p>
             <p className="font-body text-muted-foreground mb-8">
-              Musterstraße 42, 12345 Musterstadt
+              Im Degermoos 220, 5426 Lengnau
             </p>
             <a
-              href="https://maps.google.com"
+              href="https://maps.app.goo.gl/vaYfYpZwB9WdjwSj9"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-wine text-wine-foreground font-body text-sm tracking-[0.2em] uppercase px-8 py-4 rounded-sm hover:bg-accent transition-colors duration-300"

@@ -1,35 +1,41 @@
-import { Shirt, Gift, Car, Bus, Camera, CloudSun } from "lucide-react";
+import { Shirt, Gift, Car, Bus, Camera, CloudSun, Phone } from "lucide-react";
 
 const items = [
   {
     icon: Shirt,
     title: "Dresscode",
-    description: "Festlich elegant — tragt, worin ihr euch schön fühlt. Farben sind willkommen!",
+    description: "Smart & Festlich - Kein Smoking, kein Ballkleid - aber bitte ein Outfit, das zeigt: Heute ist ein besonderer Tag.\n\nDie Trauung findet auf einer Wiese statt, also bringt gutes Schuhwerk.",
   },
   {
     icon: Gift,
     title: "Geschenke",
-    description: "Eure Anwesenheit ist das schönste Geschenk. Wer uns dennoch etwas schenken möchte: Ein Beitrag zur Hochzeitsreise freut uns sehr.",
+    description: "Geschenke sind kein Muss. Wir Ihr uns etwas schenken möchtet, freuen wir uns über einen kleinen Beitrag zu unserer Hochzeitskasse.",
   },
   {
     icon: Car,
-    title: "Parken",
-    description: "Kostenlose Parkplätze stehen direkt vor der Location zur Verfügung.",
+    title: "Parkieren",
+    description: "Wir haben ca 3-4 Parkplätze um das Haus herum, ansonsten kann man im oberen Degermoos auch noch parkieren (5 Minuten Spaziergang)",
   },
   {
     icon: Bus,
     title: "Anreise",
-    description: "Ein Shuttle-Service vom Bahnhof zur Location wird um 13:30 Uhr bereitstehen.",
+    description: "Das Degermoos ist nur mit dem Auto zu erreichen. Via ÖV benützt die Bushaltestelle \"Endingen, Jüdischer Friedhof\", danach folgt ein 20 Minuten Spaziergang. Für Fahrgruppen, bitte kontaktiert Sira Frei.",
   },
   {
     icon: Camera,
     title: "Fotos",
     description: "Wir freuen uns über eure Schnappschüsse! Teilt sie gerne über unser gemeinsames Album.",
+    cta: { label: "View Album", href: "#" },
   },
   {
     icon: CloudSun,
     title: "Wetter",
-    description: "Die Trauung findet bei gutem Wetter draußen statt. Bei Regen haben wir einen Plan B!",
+    description: "Wir hoffen auf gutes Wetter, aber es kann am Abend frisch werden, bitte nimmt genug Kleider mit.",
+  },
+  {
+    icon: Phone,
+    title: "Kontakte",
+    description: "Kontakt 1 - +41 76 XXX XX XX\nKontakt 2 - +41 76 XXX XX XX\nKontakt 3 - +41 76 XXX XX XX",
   },
 ];
 
@@ -53,9 +59,19 @@ const GoodToKnowSection = () => {
             >
               <item.icon className="w-8 h-8 text-primary mb-5" />
               <h3 className="font-display text-xl text-wine mb-3">{item.title}</h3>
-              <p className="font-body text-muted-foreground leading-relaxed text-sm">
+              <p className="font-body text-muted-foreground leading-relaxed text-sm whitespace-pre-line">
                 {item.description}
               </p>
+              {"cta" in item && item.cta && (
+                <a
+                  href={item.cta.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 bg-wine text-wine-foreground font-body text-xs tracking-[0.2em] uppercase px-6 py-3 rounded-sm hover:bg-accent transition-colors duration-300"
+                >
+                  {item.cta.label}
+                </a>
+              )}
             </div>
           ))}
         </div>
