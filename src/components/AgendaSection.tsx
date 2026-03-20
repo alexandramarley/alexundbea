@@ -4,7 +4,7 @@ const timeline = [
   { time: "13:30", event: "Empfang" },
   { time: "14:00", event: "Trauung" },
   { time: "15:00", event: "Apéro & Fotos" },
-  { time: "18:00", event: "Abendessen (für geladene Gäste)" },
+  { time: "18:00", event: "Abendessen", note: "(für geladene Gäste)" },
 ];
 
 const AgendaSection = () => {
