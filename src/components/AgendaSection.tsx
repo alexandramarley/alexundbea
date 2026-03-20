@@ -33,22 +33,6 @@ const AgendaSection = () => {
               ))}
             </div>
           </div>
-              Ablauf
-            </h2>
-            <div className="space-y-6">
-              {timeline.map((item) => (
-                <div key={item.time} className="flex items-baseline gap-6 group">
-                  <span className="font-display text-2xl text-primary min-w-[5rem] text-right">
-                    {item.time}
-                  </span>
-                  <div className="h-px w-6 bg-border group-hover:bg-primary transition-colors mt-1 flex-shrink-0" />
-                  <span className="font-body text-lg text-foreground">
-                    {item.event}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-primary/10 rounded-sm -rotate-2" />
             <img
