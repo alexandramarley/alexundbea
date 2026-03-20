@@ -1,12 +1,10 @@
 import coupleImg from "@/assets/couple.jpg";
 
 const timeline = [
-  { time: "14:00", event: "Empfang & Sektempfang" },
-  { time: "15:00", event: "Trauung" },
-  { time: "16:00", event: "Kaffee & Kuchen" },
-  { time: "18:00", event: "Abendessen" },
-  { time: "20:00", event: "Eröffnungstanz" },
-  { time: "21:00", event: "Party & Feiern" },
+  { time: "13:30", event: "Empfang" },
+  { time: "14:00", event: "Trauung" },
+  { time: "15:00", event: "Apéro & Fotos" },
+  { time: "18:00", event: "Abendessen (für geladene Gäste)" },
 ];
 
 const AgendaSection = () => {
@@ -19,7 +17,7 @@ const AgendaSection = () => {
               Der Tag im Überblick
             </p>
             <h2 className="font-display text-4xl md:text-5xl text-wine mb-12">
-              Ablauf
+              19. September 2026
             </h2>
             <div className="space-y-6">
               {timeline.map((item) => (

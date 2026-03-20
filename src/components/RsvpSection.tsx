@@ -35,7 +35,7 @@ const RsvpSection = () => {
             Wir freuen uns auf euch
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-wine">
-            RSVP
+            Zu- und Absage
           </h2>
         </div>
 
@@ -164,6 +164,9 @@ const RsvpSection = () => {
               <option value="Glutenfrei">Glutenfrei</option>
               <option value="Sonstiges">Sonstiges (bitte in Nachricht angeben)</option>
             </select>
+            <p className="mt-3 font-body text-sm text-muted-foreground italic leading-relaxed">
+              Für das Abendessen freuen wir uns, wenn jeder sein eigenes Geschirr und Besteck mitbringt (Teller, Suppenteller, Besteck sowie ein Wasser- und Weinglas oder etwas zum Anstossen) – gerne euer schönstes Set oder etwas, das für euch eine besondere Bedeutung hat.
+            </p>
           </div>
 
           {/* 7. Message */}
