@@ -1,12 +1,10 @@
 import coupleImg from "@/assets/couple.jpg";
 
 const timeline = [
-  { time: "14:00", event: "Empfang & Sektempfang" },
-  { time: "15:00", event: "Trauung" },
-  { time: "16:00", event: "Kaffee & Kuchen" },
-  { time: "18:00", event: "Abendessen" },
-  { time: "20:00", event: "Eröffnungstanz" },
-  { time: "21:00", event: "Party & Feiern" },
+  { time: "13:30", event: "Empfang" },
+  { time: "14:00", event: "Trauung" },
+  { time: "15:00", event: "Apéro & Fotos" },
+  { time: "18:00", event: "Abendessen (für geladene Gäste)" },
 ];
 
 const AgendaSection = () => {
