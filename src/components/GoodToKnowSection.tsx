@@ -13,13 +13,8 @@ const items = [
   },
   {
     icon: Car,
-    title: "Parkieren",
-    description: "Wir haben ca 3-4 Parkplätze um das Haus herum, ansonsten kann man im oberen Degermoos auch noch parkieren (5 Minuten Spaziergang)",
-  },
-  {
-    icon: Bus,
     title: "Anreise",
-    description: "Das Degermoos ist nur mit dem Auto zu erreichen. Via ÖV benützt die Bushaltestelle \"Endingen, Jüdischer Friedhof\", danach folgt ein 20 Minuten Spaziergang. Für Fahrgruppen, bitte kontaktiert Sira Frei.",
+    description: "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis „Endingen, Jüdischer Friedhof" und erreicht den Ort nach einem ca. 20-minütigen Spaziergang (für Fahrgemeinschaften gerne bei Sira Frei melden).\n\nParkplätze sind begrenzt direkt beim Haus vorhanden, weitere im oberen Degermoos (ca. 5 Minuten zu Fuss)",
   },
   {
     icon: Camera,
