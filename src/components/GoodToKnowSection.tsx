@@ -1,4 +1,4 @@
-import { Shirt, Gift, Car, Bus, Camera, CloudSun, Phone } from "lucide-react";
+import { Shirt, Gift, Car, Camera, CloudSun, Phone } from "lucide-react";
 
 const items = [
   {
