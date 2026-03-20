@@ -35,7 +35,7 @@ const RsvpSection = () => {
             Wir freuen uns auf euch
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-wine">
-            RSVP
+            Zu- und Absage
           </h2>
         </div>
 
