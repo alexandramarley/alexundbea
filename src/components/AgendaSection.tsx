@@ -4,7 +4,7 @@ const timeline = [
   { time: "13:30", event: "Empfang" },
   { time: "14:00", event: "Trauung" },
   { time: "15:00", event: "Apéro & Fotos" },
-  { time: "18:00", event: "Abendessen (für geladene Gäste)" },
+  { time: "18:00", event: "Abendessen", note: "(für geladene Gäste)" },
 ];
 
 const AgendaSection = () => {
@@ -28,6 +28,9 @@ const AgendaSection = () => {
                   <div className="h-px w-6 bg-border group-hover:bg-primary transition-colors mt-1 flex-shrink-0" />
                   <span className="font-body text-lg text-foreground">
                     {item.event}
+                    {"note" in item && item.note && (
+                      <span className="text-sm italic text-muted-foreground ml-1">{item.note}</span>
+                    )}
                   </span>
                 </div>
               ))}
