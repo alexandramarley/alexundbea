@@ -1,4 +1,4 @@
-import { Shirt, Gift, Car, Bus, Camera, CloudSun, Phone } from "lucide-react";
+import { Shirt, Gift, Car, Camera, CloudSun, Phone } from "lucide-react";
 
 const items = [
   {
@@ -13,13 +13,8 @@ const items = [
   },
   {
     icon: Car,
-    title: "Parkieren",
-    description: "Wir haben ca 3-4 Parkplätze um das Haus herum, ansonsten kann man im oberen Degermoos auch noch parkieren (5 Minuten Spaziergang)",
-  },
-  {
-    icon: Bus,
     title: "Anreise",
-    description: "Das Degermoos ist nur mit dem Auto zu erreichen. Via ÖV benützt die Bushaltestelle \"Endingen, Jüdischer Friedhof\", danach folgt ein 20 Minuten Spaziergang. Für Fahrgruppen, bitte kontaktiert Sira Frei.",
+    description: "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis \u201EEndingen, Jüdischer Friedhof\u201C und erreicht den Ort nach einem ca. 20-min\u00FCtigen Spaziergang (f\u00FCr Fahrgemeinschaften gerne bei Sira Frei melden).\n\nParkpl\u00E4tze sind begrenzt direkt beim Haus vorhanden, weitere im oberen Degermoos (ca. 5 Minuten zu Fuss)",
   },
   {
     icon: Camera,
