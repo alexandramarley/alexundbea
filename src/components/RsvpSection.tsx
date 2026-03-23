@@ -18,9 +18,28 @@ const RsvpSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Danke für deine Rückmeldung! Wir freuen uns auf dich! 🥂");
+    setIsSubmitting(true);
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycby7aF0OjaAmBnZTELLMBGpwQxQaJ5iWkfsmfK4_p1QBh1M6Rg1EY1a4fb0pMCC_FihBtg/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+      toast.success("Danke für deine Rückmeldung! Wir freuen uns auf dich! 🥂");
+      setFormData({ name: "", email: "", attendance: "", plusOne: "", plusOneName: "", dietary: "", message: "" });
+    } catch {
+      toast.error("Etwas ist schiefgelaufen. Bitte versuche es erneut.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const inputClasses =
