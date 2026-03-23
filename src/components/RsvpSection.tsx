@@ -184,7 +184,10 @@ const RsvpSection = () => {
               <option value="Sonstiges">Sonstiges (bitte in Nachricht angeben)</option>
             </select>
             <p className="mt-3 font-body text-sm text-muted-foreground italic leading-relaxed">
-              Für das Abendessen freuen wir uns, wenn jeder sein eigenes Geschirr und Besteck mitbringt (Teller, Suppenteller, Besteck sowie ein Wasser- und Weinglas oder etwas zum Anstossen) – gerne euer schönstes Set oder etwas, das für euch eine besondere Bedeutung hat.
+              Für das Abendessen freuen wir uns, wenn jeder sein eigenes Geschirr und Besteck mitbringt (Teller, Suppenteller, Besteck sowie ein Wasser- und Weinglas oder etwas zum Anstossen) – gerne euer schönstes Set oder etwas, das für euch eine besondere Bedeutung hat (Trinkhorn, oder von der Oma, etc).
+            </p>
+            <p className="mt-2 font-body text-sm text-muted-foreground italic leading-relaxed">
+              Wir freuen uns auf Eure Geschichten die Euch mit dem Geschirr verbindet!
             </p>
           </div>
 
