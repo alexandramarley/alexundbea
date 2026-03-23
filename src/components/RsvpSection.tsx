@@ -206,9 +206,10 @@ const RsvpSection = () => {
 
           <button
             type="submit"
-            className="w-full bg-primary text-primary-foreground font-body text-sm tracking-[0.2em] uppercase px-10 py-4 rounded-sm hover:bg-accent transition-colors duration-300 mt-4"
+            disabled={isSubmitting}
+            className="w-full bg-primary text-primary-foreground font-body text-sm tracking-[0.2em] uppercase px-10 py-4 rounded-sm hover:bg-accent transition-colors duration-300 mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Einladung bestätigen
+            {isSubmitting ? "Wird gesendet..." : "Einladung bestätigen"}
           </button>
         </form>
       </div>
