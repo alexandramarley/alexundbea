@@ -27,14 +27,12 @@ jobs:
         run: npm ci
 
       - name: Build
-        # compute repo name and pass as Vite base so assets load correctly on project pages
-        env:
-          REPO: ${{ github.repository }}
+        # If you're using a custom domain (e.g. alexundbea.com) the site should be built
+        # with a root base so assets load from '/'. For project pages (username.github.io/repo)
+        # you would build with --base "/<repo>/" instead. This workflow builds with '/'.
         run: |
-          REPO_NAME=${REPO##*/}
-          echo "Repository name: $REPO_NAME"
-          echo "Building with base: /$REPO_NAME/"
-          npm run build -- --base "/$REPO_NAME/"
+          echo "Building with base: /"
+          npm run build -- --base "/"
 
       - name: Configure Pages
         uses: actions/configure-pages@v6.0.0
