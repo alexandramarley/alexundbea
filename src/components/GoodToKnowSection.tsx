@@ -20,7 +20,10 @@ const items = [
     icon: Camera,
     title: "Fotos",
     description: "Wir freuen uns über eure Schnappschüsse! Teilt sie gerne über unser gemeinsames Album.",
-    cta: { label: "View Album", href: "#" },
+    cta: {
+      label: "View Album",
+      href: "https://drive.google.com/drive/folders/1B9o8JIvATMNXZHmDvfo4wH8jy0Rgak6A",
+    },
   },
   {
     icon: CloudSun,
