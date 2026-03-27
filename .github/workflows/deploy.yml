@@ -16,10 +16,10 @@ jobs:
     name: Build and deploy
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '18'
 
@@ -37,13 +37,12 @@ jobs:
           npm run build -- --base "/$REPO_NAME/"
 
       - name: Configure Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v6
 
       - name: Upload artifact (dist)
-        # Use v2 which depends on the non-deprecated upload-artifact action
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v5
