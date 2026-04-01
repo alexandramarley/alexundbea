@@ -9,6 +9,7 @@ const RsvpSection = () => {
     plusOne: "",
     plusOneName: "",
     dietary: "",
+    plusOneDietary: "",
     message: "",
   });
 
@@ -34,7 +35,7 @@ const RsvpSection = () => {
         }
       );
       toast.success("Danke für deine Rückmeldung! Wir freuen uns auf dich! 🥂");
-      setFormData({ name: "", email: "", attendance: "", plusOne: "", plusOneName: "", dietary: "", message: "" });
+      setFormData({ name: "", email: "", attendance: "", plusOne: "", plusOneName: "", dietary: "", plusOneDietary: "", message: "" });
     } catch {
       toast.error("Etwas ist schiefgelaufen. Bitte versuche es erneut.");
     } finally {
@@ -119,8 +120,30 @@ const RsvpSection = () => {
               ))}
             </div>
           </div>
+          
+          {/* 4. Dietary */}
+          <div>
+            <label htmlFor="dietary" className={labelClasses}>
+              Unverträglichkeiten / Ernährung
+            </label>
+            <select
+              id="dietary"
+              name="dietary"
+              value={formData.dietary}
+              onChange={handleChange}
+              className={inputClasses}
+            >
+              <option value="">Bitte wählen</option>
+              <option value="Keine">Keine Einschränkungen</option>
+              <option value="Vegetarisch">Vegetarisch</option>
+              <option value="Vegan">Vegan</option>
+              <option value="Glutenfrei">Glutenfrei</option>
+              <option value="Sonstiges">Sonstiges (bitte in Nachricht angeben)</option>
+            </select>
+            
+          </div>
 
-          {/* 4. Plus One */}
+          {/* 5. Plus One */}
           <div>
             <label className={labelClasses}>Bringst du eine Begleitung mit?</label>
             <div className="flex gap-4">
@@ -150,7 +173,7 @@ const RsvpSection = () => {
           {formData.plusOne === "Ja" && (
             <div>
               <label htmlFor="plusOneName" className={labelClasses}>
-                Name deiner Begleitung
+                Name(n) deiner Begleitung
               </label>
               <input
                 type="text"
@@ -164,32 +187,30 @@ const RsvpSection = () => {
             </div>
           )}
 
-          {/* 6. Dietary */}
-          <div>
-            <label htmlFor="dietary" className={labelClasses}>
-              Unverträglichkeiten / Ernährung
-            </label>
-            <select
-              id="dietary"
-              name="dietary"
-              value={formData.dietary}
-              onChange={handleChange}
-              className={inputClasses}
-            >
-              <option value="">Bitte wählen</option>
-              <option value="Keine">Keine Einschränkungen</option>
-              <option value="Vegetarisch">Vegetarisch</option>
-              <option value="Vegan">Vegan</option>
-              <option value="Glutenfrei">Glutenfrei</option>
-              <option value="Sonstiges">Sonstiges (bitte in Nachricht angeben)</option>
-            </select>
-            <p className="mt-3 font-body text-sm text-muted-foreground italic leading-relaxed">
-              Für das Abendessen freuen wir uns, wenn jeder sein eigenes Geschirr und Besteck mitbringt (Teller, Suppenteller, Besteck sowie ein Wasser- und Weinglas oder etwas zum Anstossen) – gerne euer schönstes Set oder etwas, das für euch eine besondere Bedeutung hat (Trinkhorn, oder von der Oma, etc).
-            </p>
-            <p className="mt-2 font-body text-sm text-muted-foreground italic leading-relaxed">
-              Wir freuen uns auf Eure Geschichten die Euch mit dem Geschirr verbindet!
-            </p>
-          </div>
+          {/* 5b. Plus One Dietary */}
+          {formData.plusOne === "Ja" && (
+            <div>
+              <label htmlFor="plusOneDietary" className={labelClasses}>
+                Unverträglichkeiten / Ernährung Deiner Begleitung
+              </label>
+              <select
+                id="plusOneDietary"
+                name="plusOneDietary"
+                value={formData.plusOneDietary}
+                onChange={handleChange}
+                className={inputClasses}
+              >
+                <option value="">Bitte wählen</option>
+                <option value="Keine">Keine Einschränkungen</option>
+                <option value="Vegetarisch">Vegetarisch</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Glutenfrei">Glutenfrei</option>
+                <option value="Sonstiges">Sonstiges (bitte in Nachricht angeben)</option>
+              </select>
+            </div>
+          )}
+
+          
 
           {/* 7. Message */}
           <div>

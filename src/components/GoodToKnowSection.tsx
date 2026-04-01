@@ -4,17 +4,20 @@ const items = [
   {
     icon: Shirt,
     title: "Dresscode",
-    description: "Smart & Festlich - Kein Smoking, kein Ballkleid - aber bitte ein Outfit, das zeigt: Heute ist ein besonderer Tag.\n\nDie Trauung findet auf einer Wiese statt, also bringt gutes Schuhwerk.",
+    description:
+      "Smart Casual: Ein Outfit das für dich zeigt: Heute ist ein besonderer Tag. Komm so, dass du dich schön und wohl fühlst!\n\nHinweis: Wir sind meist draussen und während der Trauung auf einer Wiese.",
   },
   {
     icon: Gift,
     title: "Geschenke",
-    description: "Geschenke sind kein Muss. Wir Ihr uns etwas schenken möchtet, freuen wir uns über einen kleinen Beitrag zu unserer Hochzeitskasse.",
+    description:
+      "Geschenke sind kein Muss!\n\nWenn du uns etwas schenken möchtest, freuen wir uns über einen kleinen Betrag in unsere Hochzeitskasse - dafür wird ein Kässeli und Twint-Code vorhanden sein.",
   },
   {
     icon: Car,
     title: "Anreise",
-    description: "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis \u201EEndingen, Jüdischer Friedhof\u201C und erreicht den Ort nach einem ca. 20-min\u00FCtigen Spaziergang (f\u00FCr Fahrgemeinschaften gerne bei Sira Frei melden).\n\nParkpl\u00E4tze sind begrenzt direkt beim Haus vorhanden, weitere im oberen Degermoos (ca. 5 Minuten zu Fuss)",
+    description:
+      "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis „Endingen, Jüdischer Friedhof“ und erreicht den Ort nach einem ca. 20-minütigen Spaziergang\n\nFür Fahrgemeinschaften gerne bei Alex melden, bis 16 September.\n\nAuf dem Hof wird nicht parkiert. Parkplätze sind beschildert.",
   },
   {
     icon: Camera,
@@ -27,13 +30,36 @@ const items = [
   },
   {
     icon: CloudSun,
-    title: "Wetter",
-    description: "Wir hoffen auf gutes Wetter, aber es kann am Abend frisch werden, bitte nimmt genug Kleider mit.",
+    title: "Mitnehmen",
+    description:
+      "Für das Abendessen braucht ihr Euer eigenes Geschirr und Besteck! 😊\n\nTeller, Suppenteller, Besteck sowie Wasserglas und etwas zum Anstossen wird gebraucht. Gerne Euer schönstes Set oder etwas, das für Euch eine besondere Bedeutung hat (Trinkhorn, Tasse der Oma, etc.)\n\nWir freuen uns auf Geschichten, die Euch mit dem Geschirr verbindet!",
   },
   {
     icon: Phone,
     title: "Kontakte",
-    description: "Kontakt 1 - +41 76 XXX XX XX\nKontakt 2 - +41 76 XXX XX XX\nKontakt 3 - +41 76 XXX XX XX",
+    description: (
+      <>
+        Sophie <span className="italic">(für Fragen bzgl. Essen)</span>
+        <br />
+        <a href="tel:+41788141664" className="text-primary underline">
+          +41 (0)78 814 16 64
+        </a>
+        <br />
+        <br />
+        Alex & Bea <span className="italic">(für Fragen bzgl. Anreise)</span>
+        <br />
+        <a href="tel:+41762082554" className="text-primary underline">
+          +41 (0)76 208 25 54
+        </a>
+        <br />
+        <br />
+        Sira <span className="italic">(für alle restlichen Fragen)</span>
+        <br />
+        <a href="tel:+41764032510" className="text-primary underline">
+          +41 (0)76 4032510
+        </a>
+      </>
+    ),
   },
 ];
 
@@ -65,7 +91,7 @@ const GoodToKnowSection = () => {
                   href={item.cta.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-wine text-wine-foreground font-body text-xs tracking-[0.2em] uppercase px-6 py-3 rounded-sm hover:bg-accent transition-colors duration-300"
+                  className="inline-block mt-8 bg-wine text-wine-foreground font-body text-xs tracking-[0.2em] uppercase px-6 py-3 rounded-sm hover:bg-accent transition-colors duration-300"
                 >
                   {item.cta.label}
                 </a>

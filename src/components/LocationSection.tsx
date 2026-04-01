@@ -22,8 +22,10 @@ const LocationSection = () => {
               Location
             </h2>
             <p className="font-body text-lg text-foreground leading-relaxed mb-4">
-              Wir feiern unsere Liebe an einem Ort, der uns besonders am Herzen liegt.
-              Mitten im Degermoos, umgeben von Natur, Feldern und der Ruhe des Waldes, verbringen wir hier unseren Alltag – und genau hier möchten wir auch diesen besonderen Tag mit euch teilen.
+              Wir feiern da, wo wir am liebsten sind: ZUHAUSE! 😊 
+            </p>
+            <p className="font-body text-lg text-foreground leading-relaxed mb-4">
+              Die Trauung findet auf einer schönen Wiese auf dem Hügel über unserem Hof statt. Ein beschilderter Spaziergang von etwa 15 Minuten führt euch dorthin.  Nach der Trauung begeben wir uns wieder auf den Hof, wo wir das Brautpaar wieder in Empfang nehmen. 
             </p>
             <p className="font-body text-muted-foreground mb-8">
               Im Degermoos 220, 5426 Lengnau
