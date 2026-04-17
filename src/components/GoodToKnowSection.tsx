@@ -32,7 +32,7 @@ const items = [
     icon: CloudSun,
     title: "Mitnehmen",
     description:
-      "Für das Abendessen braucht ihr Euer eigenes Geschirr und Besteck! 😊\n\nTeller, Suppenteller, Besteck sowie Wasserglas und etwas zum Anstossen wird gebraucht. Gerne Euer schönstes Set oder etwas, das für Euch eine besondere Bedeutung hat (Trinkhorn, Tasse der Oma, etc.)\n\nWir freuen uns auf Geschichten, die Euch mit dem Geschirr verbindet!",
+      "Für das Abendessen braucht ihr Euer eigenes Geschirr und Besteck! 😊\n\nTeller, Suppenteller, Besteck sowie Wasserglas und ein Glas zum Anstossen wird gebraucht. Gerne Euer schönstes Set oder etwas, das für Euch eine besondere Bedeutung hat (Trinkhorn, Tasse der Oma, etc.)\n\nWir freuen uns auf Geschichten, die Euch mit dem Geschirr verbindet!",
   },
   {
     icon: Phone,

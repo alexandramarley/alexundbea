@@ -3,6 +3,7 @@ import AgendaSection from "@/components/AgendaSection";
 import LocationSection from "@/components/LocationSection";
 import GoodToKnowSection from "@/components/GoodToKnowSection";
 import RsvpSection from "@/components/RsvpSection";
+import CoupleSection from "@/components/CoupleSection";
 
 const Index = () => {
   return (
@@ -11,8 +12,9 @@ const Index = () => {
       <AgendaSection />
       <LocationSection />
       <GoodToKnowSection />
-      <RsvpSection />
-      <footer className="text-center py-12 bg-sand">
+  <RsvpSection />
+  <CoupleSection />
+      <footer className="text-center py-12 bg-background">
         <p className="font-display text-2xl text-wine italic mb-2">Bea & Alex</p>
         <p className="font-body text-sm text-muted-foreground tracking-wide">
           Mit Liebe gefeiert 🌈
