@@ -26,7 +26,7 @@ const RsvpSection = () => {
     setIsSubmitting(true);
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycby7aF0OjaAmBnZTELLMBGpwQxQaJ5iWkfsmfK4_p1QBh1M6Rg1EY1a4fb0pMCC_FihBtg/exec",
+        "https://script.google.com/macros/s/AKfycbzxRQJjv--5NjS6dhuVvepuaULFTAMkkeop3p3XUwzAY-Cl0qU1OJquAFCmCbGAk-Af3w/exec",
         {
           method: "POST",
           mode: "no-cors",
