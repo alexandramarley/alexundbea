@@ -17,7 +17,7 @@ const items = [
     icon: Car,
     title: "Anreise",
     description:
-      "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis „Endingen, Jüdischer Friedhof“ und erreicht den Ort nach einem ca. 20-minütigen Spaziergang\n\nFür Fahrgemeinschaften gerne bei Alex melden, bis 16. September.\n\nAuf dem Hof wird nicht parkiert. Parkplätze sind beschildert.",
+      "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis „Endingen, Jüdischer Friedhof“ und erreicht den Ort nach einem ca. 20-minütigen Spaziergang.\n\nFür Fahrgemeinschaften gerne bei Alex melden, bis 16. September.\n\nAuf dem Hof wird nicht parkiert. Parkplätze sind beschildert.",
   },
   {
     icon: Camera,
