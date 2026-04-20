@@ -17,7 +17,7 @@ const items = [
     icon: Car,
     title: "Anreise",
     description:
-      "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis „Endingen, Jüdischer Friedhof“ und erreicht den Ort nach einem ca. 20-minütigen Spaziergang\n\nFür Fahrgemeinschaften gerne bei Alex melden, bis 16 September.\n\nAuf dem Hof wird nicht parkiert. Parkplätze sind beschildert.",
+      "Das Degermoos ist am besten mit dem Auto erreichbar; mit ÖV fahrt ihr bis „Endingen, Jüdischer Friedhof“ und erreicht den Ort nach einem ca. 20-minütigen Spaziergang\n\nFür Fahrgemeinschaften gerne bei Alex melden, bis 16. September.\n\nAuf dem Hof wird nicht parkiert. Parkplätze sind beschildert.",
   },
   {
     icon: Camera,
@@ -32,7 +32,7 @@ const items = [
     icon: CloudSun,
     title: "Mitnehmen",
     description:
-      "Für das Abendessen braucht ihr Euer eigenes Geschirr und Besteck! 😊\n\nTeller, Suppenteller, Besteck sowie Wasserglas und ein Glas zum Anstossen wird gebraucht. Gerne Euer schönstes Set oder etwas, das für Euch eine besondere Bedeutung hat (Trinkhorn, Tasse der Oma, etc.)\n\nWir freuen uns auf Geschichten, die Euch mit dem Geschirr verbindet!",
+      "Für das Abendessen braucht ihr Euer eigenes Geschirr und Besteck! 😊\n\nTeller, Suppenteller, Besteck sowie Wasserglas und ein Glas zum Anstossen wird gebraucht. Gerne Euer schönstes Set oder etwas, das für Euch eine besondere Bedeutung hat (Trinkhorn, Tasse der Oma, etc.)\n\nWir freuen uns auf Geschichten, die Euch mit dem Geschirr verbinden!",
   },
   {
     icon: Phone,

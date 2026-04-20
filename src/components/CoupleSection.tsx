@@ -8,7 +8,7 @@ const CoupleSection = () => {
           <div className="text-center">
             <h2 className="font-display text-4xl md:text-5xl text-wine mb-4">Wir freuen uns auf Euch!</h2>
             <p className="font-body text-lg text-foreground max-w-xl mx-auto">
-              Bitte meldet euch bis spätestens 30 Juni 2026 an.
+              Bitte meldet euch bis spätestens 30. Juni 2026 an.
             </p>
           </div>
 

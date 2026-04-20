@@ -55,7 +55,7 @@ const RsvpSection = () => {
             Wir freuen uns auf euch
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-wine">
-            Zu- und Absage
+            Zu- oder Absage
           </h2>
         </div>
 
@@ -87,7 +87,7 @@ const RsvpSection = () => {
               id="email"
               name="email"
               required
-              placeholder="deine@email.de"
+              placeholder="deine@email.ch"
               value={formData.email}
               onChange={handleChange}
               className={inputClasses}

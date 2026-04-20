@@ -25,7 +25,7 @@ const LocationSection = () => {
               Wir feiern da, wo wir am liebsten sind: ZUHAUSE! 😊 
             </p>
             <p className="font-body text-lg text-foreground leading-relaxed mb-4">
-              Die Trauung findet auf einer schönen Wiese auf dem Hügel über unserem Hof statt. Ein beschilderter Spaziergang von etwa 15 Minuten führt euch dorthin.  Nach der Trauung begeben wir uns wieder auf den Hof, wo wir das Brautpaar wieder in Empfang nehmen. 
+              Die Trauung findet auf einer schönen Wiese auf dem Hügel über unserem Hof statt. Ein beschilderter Spaziergang von etwa 15 Minuten führt euch dorthin. Nach der Trauung begeben sich alle wieder auf den Hof, wo das Brautpaar in Empfang genommen wird. 
             </p>
             <p className="font-body text-muted-foreground mb-8">
               Im Degermoos 220, 5426 Lengnau
