@@ -4,6 +4,7 @@ const timeline = [
   { time: "13:30", event: "Empfang" },
   { time: "14:00", event: "Trauung" },
   { time: "15:00", event: "Empfang Brautpaar am Hof" },
+  { time: "15:30", event: "Apéro & Fotos" },
   { time: "18:00", event: "Abendessen" },
 ];
 
